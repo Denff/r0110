@@ -1,10 +1,15 @@
+import { Button, Layout, Row } from "antd";
 import React, { FC } from "react";
+import EventCalendar from "../components/EventCalendar";
 
 const Event: FC = () => {
     return (
-        <div>
-            Event
-        </div>
+        <Layout>
+            <EventCalendar events={[]} />
+            <Row justify="center">
+                <Button>add event</Button>
+            </Row>
+        </Layout>
     );
 };
 
